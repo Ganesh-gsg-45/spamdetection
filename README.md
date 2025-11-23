@@ -24,7 +24,7 @@ The dataset used is `SMSSpamCollection.txt` which contains labeled SMS messages 
 - Evaluates model performance with classification reports and accuracy scores.
 - Saves vectorizers and trained model as pickle files (`bow.pkl`, `tfidf.pkl`, `random.pkl`).
 
-### Application: `gsg.py`
+### Application: `spam.py`
 - A Streamlit-based web app interface for interacting with the trained model.
 - Allows users to input an SMS message.
 - Preprocesses the input message using the same steps as in training.
@@ -50,7 +50,7 @@ The dataset used is `SMSSpamCollection.txt` which contains labeled SMS messages 
 3. Run the notebook `spamdetection.ipynb` to train and save the model and vectorizers, or use the pre-saved pickle files.
 4. Start the Streamlit app:
    ```bash
-   streamlit run gsg.py
+   streamlit run spam.py
    ```
 5. Enter your message in the app to get a spam/ham prediction.
 
@@ -61,7 +61,7 @@ The dataset used is `SMSSpamCollection.txt` which contains labeled SMS messages 
 ├── bow.pkl                        # Saved Bag of Words vectorizer
 ├── tfidf.pkl                      # Saved TF-IDF vectorizer
 ├── random.pkl                     # Saved Random Forest model
-├── gsg.py                        # Streamlit app for spam detection
+├── spam.py                        # Streamlit app for spam detection
 ├── spamdetection.ipynb           # Jupyter notebook for model creation
 └── README.md                     # This readme file
 ```
